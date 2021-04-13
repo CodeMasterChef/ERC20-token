@@ -103,3 +103,29 @@ truffle(development)> myToken.address
 '0x80Bc09EA8B7616D5aD4dF3d5791A7b456a4D2395'
 ```
 
+Test with ChaiJS (https://www.chaijs.com/):
+
+```
+$ truffle test
+Using network 'development'.
+
+
+Compiling your contracts...
+===========================
+> Compiling ./contracts/MyToken.sol
+> Artifacts written to /var/folders/w_/s37l6f4100lfl4dgqmn94t580000gp/T/test--11184-VOx15sIIYFpK
+> Compiled successfully using:
+   - solc: 0.8.0+commit.c7dfd78e.Emscripten.clang
+
+
+
+  Contract: MyToken
+    token attributes
+      ✓ has the correct name (177ms)
+      ✓ has the correct symbol (68ms)
+      ✓ has the correct total supply (143ms)
+
+
+  3 passing (2s)
+
+```
