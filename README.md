@@ -129,3 +129,16 @@ Compiling your contracts...
   3 passing (2s)
 
 ```
+
+# Deploy to Binance Smart Chain Testnet:
+Enter in the BSC Testnet details as follows:
+```
+Network Name: BSC Testnet
+New RPC URL: https://data-seed-prebsc-1-s1.binance.org:8545
+ChainID: 97
+Symbol: BNB
+Block Explorer URL: https://testnet.bscscan.com/
+```
+Faucet for free BNB on BSC Testnet: https://testnet.binance.org/faucet-smart
+
+
