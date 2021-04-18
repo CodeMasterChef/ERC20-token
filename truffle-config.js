@@ -18,7 +18,14 @@
  *
  */
 
-// const HDWalletProvider = require('@truffle/hdwallet-provider');
+const HDWalletProvider = require('@truffle/hdwallet-provider');
+require('dotenv').config();
+// Public key: 0xE0eADa8B7610768Bc60C4cF2451959db4109BeD6
+const provider = new HDWalletProvider({
+  privateKeys: [process.env.PRIVATE_KEY],
+  providerOrUrl: 'https://data-seed-prebsc-1-s1.binance.org:8545/'
+})
+
 // const infuraKey = "fj4jll3k.....";
 //
 // const fs = require('fs');
@@ -46,6 +53,10 @@ module.exports = {
      host: "127.0.0.1",     // Localhost (default: none)
      port: 8545,            // Standard Ethereum port (default: none)
      network_id: "*",       // Any network (default: none)
+    },
+    bsctestnet: {
+      provider: () => provider,
+      network_id: "97", 
     },
     // Another network with more advanced options...
     // advanced: {

@@ -139,6 +139,17 @@ ChainID: 97
 Symbol: BNB
 Block Explorer URL: https://testnet.bscscan.com/
 ```
+Generate private key: https://vanity-eth.tk/
+
+Create a `.env` file from copying `.env.example` file. Change the PRIVATE_KEY by your private key.
+
 Faucet for free BNB on BSC Testnet: https://testnet.binance.org/faucet-smart
 
+Run to deploy to BSC Testnet:
+```
+$ truffle migrate --reset --network bsctestnet
+```
+To see all transactions of deploy address (example: 0xE0eADa8B7610768Bc60C4cF2451959db4109BeD6):
+https://testnet.bscscan.com/address/0xE0eADa8B7610768Bc60C4cF2451959db4109BeD6
 
+🎉 Enjoy the token: https://testnet.bscscan.com/token/0x883ac49cff04ee27d12a18ee6a5ab026949b9edb#balances
