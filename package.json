@@ -1,4 +1,10 @@
 {
+  "scripts": {
+    "compile": "truffle compile",
+    "migrate": "truffle migrate --reset",
+    "migrate:bsctestnet": "truffle migrate --reset --network bsctestnet",
+    "verify": "truffle run verify MyToken --network bsctestnet"
+  },
   "dependencies": {
     "@openzeppelin/contracts": "^4.0.0",
     "@truffle/hdwallet-provider": "^1.2.6",
@@ -7,6 +13,7 @@
   "devDependencies": {
     "chai": "^4.3.4",
     "chai-as-promised": "^7.1.1",
-    "chai-bignumber": "^3.0.0"
+    "chai-bignumber": "^3.0.0",
+    "truffle-plugin-verify": "^0.5.7"
   }
 }

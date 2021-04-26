@@ -20,7 +20,6 @@
 
 const HDWalletProvider = require('@truffle/hdwallet-provider');
 require('dotenv').config();
-// Public key: 0xE0eADa8B7610768Bc60C4cF2451959db4109BeD6
 const provider = new HDWalletProvider({
   privateKeys: [process.env.PRIVATE_KEY],
   providerOrUrl: 'https://data-seed-prebsc-1-s1.binance.org:8545/'
@@ -113,5 +112,11 @@ module.exports = {
 
   db: {
     enabled: false
+  },
+  plugins: [
+    'truffle-plugin-verify'
+  ],
+  api_keys: {
+    bscscan: process.env.BSCSCAN_API_KEY
   }
 };
